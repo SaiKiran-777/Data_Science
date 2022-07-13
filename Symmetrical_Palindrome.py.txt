@@ -1,0 +1,18 @@
+# Write a Python program to check whether the string is Symmetrical or Palindrome.
+
+s = input()
+if(s[::-1]==s):
+    print(s, 'is Palindrome')
+else:
+    print(s, 'is Not a Palindrome')
+half = int(len(s) / 2)
+if (len(s) % 2 == 0):
+    first_str = s[:half]
+    second_str = s[half:]
+else:
+    first_str = s[:half]
+    second_str = s[half+1:]
+if first_str == second_str:
+    print(s, 'is Symmertical')
+else:
+    print(s, 'is Not Symmertical')

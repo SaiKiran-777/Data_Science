@@ -1,0 +1,6 @@
+# Python program ways to find length of list
+
+list = [1,2,6,4,3,5,10]
+length = 0
+length = len(list)
+print('The length of the list is : ',length)

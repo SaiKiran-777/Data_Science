@@ -1,0 +1,8 @@
+# write a Python program to Find yesterday’s, today’s and tomorrow’s date
+from datetime import datetime, timedelta
+present = datetime.now()
+yesterday = present - timedelta(1)
+tomorrow = present + timedelta(1)
+print("Yesterday was = ", yesterday.strftime('%d-%m-%Y'))
+print("Today is= ", present.strftime('%d-%m-%Y'))
+print("Tomorrow is = ", tomorrow.strftime('%d-%m-%Y'))

@@ -1,0 +1,12 @@
+# Python program to interchange first and last elements in a list
+
+list = []
+n = int(input('Enter the number of elements you want : '))
+for i in range (n):
+    ls = int(input())
+    list.append(ls)
+print('The original list is : ',list)
+change = list[0]
+list[0] = list[n - 1]
+list[n - 1] = change
+print('The new list is : ',list)
